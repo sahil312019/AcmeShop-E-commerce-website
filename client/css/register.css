@@ -1,0 +1,130 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden; 
+}
+
+/* Register Section */
+#Register{
+  position:relative;
+}
+
+#Register::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  opacity:0.9;
+  background: url('../img/bgf.jpg') no-repeat center center/cover; 
+ 
+
+}
+#Register-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Register-box input,
+#Register-box textarea{
+   width: 100%;
+   padding: 0.5rem;
+   border-radius: 9px;
+   font-size: 1.1rem;
+
+}
+
+.form-group{
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#cbox{
+  display: inline-block;
+  width: 0.65rem;
+}
+#Register-box form{
+  width: 40%;
+  
+}
+#Register-box label{
+  font-size: 1.3rem;
+
+}
+/* Utility Classes */
+.h-primary{
+    /* color: white; */
+    font-size:2.8rem;
+    padding:12px;
+    padding-top: 5rem;
+}
+
+.h-secondary{
+    font-size:1.2rem;
+    padding:12px;
+    color:white;
+}
+ 
+.btn{
+    padding: 6px 20px;
+    border : 2px solid rgb(21, 21, 100);
+    background-color:rgba(131, 130, 238, 0.7) ;
+    color:white;
+    margin: 17px;
+    font-size:1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn1{
+    padding: 6px 20px;
+    border: 4px solid rgb(96, 41, 223);
+    background-color: rgb(21, 21, 100);
+    color:white;
+    /* margin: 17px; */
+    margin: 20px 0px;
+    width: 103%;
+    font-size:1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align:center;
+}
+.btn1:hover{
+    background-color: rgb(107, 107, 233);
+}
+
+.center{
+    text-align: center;
+}
+
+  
+  @media (max-width: 474px){
+    body{
+    overflow:inherit;
+  }
+ 
+   .h-primary{
+    height: 26px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+   }
+}
+
+  #Register-box{
+      padding-left: 0rem;
+      /* text-align: center; */
+      
+  }
+  
+  /* utility classes */
+  .h-primary{
+      height: 26px;
+      padding-bottom: 6rem;
+  }
+  

@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+#login::before{
+  content: "";
+  background: url('../img/bg1.jpg') no-repeat center center/cover; 
+  position: absolute;
+  height : 100%;
+  width: 100%;
+}
+#login{
+  display: flex;
+  justify-content: center;
+}
+
+
+.container{
+  color: white;
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  right: 40%;
+}
+
+.container h1{
+  display: flex;
+  justify-content: center;
+  font-size: 3.5rem;
+  /* border-bottom: 0.3rem solid purple; */
+  margin-bottom: 1rem;
+  padding: 1rem 0rem;
+  color: white;
+}
+
+.container .box{
+  width: 100%;
+  margin: 1.5rem  0rem;
+  border-bottom: 0.125rem solid purple;
+}
+.container .box1{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 1.5rem  auto;
+}
+.container .box input{
+  border: none;
+  background: none;
+  width: 75%;
+  padding:0.4rem 0.8rem;
+  font-size: 1.5rem;
+  outline: none;
+  color: white;
+
+}
+
+.container .box i{
+  width:2rem;
+  text-align: center;
+}
+
+.container .btn{
+  display: flex;
+  color: white;
+  background: none;
+  cursor: pointer;
+  outline:none;
+  margin: 0.75rem auto;
+  padding: 0.8rem 2.5rem;
+  border: 0.3rem solid purple;
+  border-radius:0.8rem ;
+  font-size: 1rem;
+}
+
+.container .btn:hover{
+  opacity: 0.8;
+  color: purple;
+  background: white;
+  
+}
+
+
+@media (max-width: 1666px){
+  .container{
+    width: fit-content;
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    right: 40%;
+  
+  }
+  
+  .container h1{ 
+    font-size: 2.5rem;
+  }
+  
+  .container .box{
+    width: 100%;
+    margin: 1.5rem  0rem;
+    border-bottom: 0.125rem solid purple;
+  }
+  .container .box1{
+    font-size: 1rem;
+  }
+  .container .box input{
+    font-size: 1rem;
+  }
+  
+  .container .box i{
+    width:1rem;
+    text-align: center;
+  }
+  
+}
+@media (max-width: 1182px){
+  .container{
+    width: fit-content;
+    color: white;
+     position: absolute;
+    top: 20%;
+    left: 40%;
+    right: 20%;
+   
+  }
+  
+  .container h1{ 
+    font-size: 2.5rem;
+  }
+  
+  .container .box{
+    width: 100%;
+    margin: 1.5rem  0rem;
+    border-bottom: 0.125rem solid purple;
+  }
+  .container .box1{
+    font-size: 1rem;
+  }
+  .container .box input{
+    font-size: 1rem;
+  }
+  
+  .container .box i{
+    width:1rem;
+    text-align: center;
+  }
+  
+}

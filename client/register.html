@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AcmeShop: A to Z Products</title>
+    <script src="https://kit.fontawesome.com/aabaffe564.js" crossorigin="anonymous"></script>
+    <title>Register</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+    
+    <!-- Register section -->
+    <section id="Register">
+
+      <h1 class="h-primary center">
+        Registration
+      </h1>
+      <div id="Register-box">
+        <form action="register.php" method="POST" onsubmit="return validate()">
+          <div class="form-group">
+            <label for="Fname">First Name:</label>
+            <input required type="text" name="name" id="Fname" placeholder="Enter your First Name">
+          </div>
+          <div class="form-group">
+            <label for="Lname">Last Name:</label>
+            <input required type="text" name="" id="Lname" placeholder="Enter your Last Name">
+          </div>
+          <div class="form-group">
+            <label for="mobile">Mobile Number:</label>
+            <input required type="number" name="mobile" id="mobile" placeholder="Enter your Mobile Number">
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input required type="email" name="mail" id="email" placeholder="Enter your Email">
+          </div>
+          <div class="form-group">
+            <label for="password1">Password:</label>
+            <input required type="password" name="password" id="password1" placeholder="Enter your Password">
+          </div>
+          <div class="form-group">
+            <label for="password2">Confirm Password:</label>
+            <input required type="password" name="password" id="password2" placeholder="Confirm your Password">
+          </div>
+          <div class="form-group" id="cbox">
+            <input required type="checkbox" name="terms" id="cb1" > 
+          </div>
+          <span class="h-secondary">I accept the <span style="color: #011afc; cursor:pointer ; text-decoration: underline">term of use</span> & the <span style="color: #011afc; cursor:pointer ; text-decoration: underline">privacy policy</span></span>
+          <br>
+          <span class="h-secondary">Already Registered <span onclick="gotoLogin()" style="color: #011afc; cursor: pointer;">Click Here</span> to Log in</span>
+          <button class="btn1">Register Now</button>
+        </form>
+      </div>
+
+      <hr>
+    </section>
+    <script>
+      function validate()
+      {
+          p1=document.getElementById('password1').value;
+          p2=document.getElementById('password2').value;
+          if(p1==p2)
+          {
+              return true;
+          }
+
+          alert('Password Mismatch');
+          return false;
+      }
+  </script>
+  <script src="js_login.js"></script>
+</body>
+
+</html>
